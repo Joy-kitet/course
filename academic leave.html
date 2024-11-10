@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Profile</title>
+    
+    <style>
+        /* Basic styling for the dropdown */
+        .dropdown {
+            width: 200px;
+            border: 0px;
+            
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+            user-select: none;
+        }
+
+        /* Plus/Minus sign styling */
+        .sign {
+            font-weight: bold;
+        }
+
+        /* Hidden content styling */
+        .dropdown-content {
+            display: none;
+            padding: 10px;
+            border: 0px;
+            border-top: none;
+            
+        }
+
+        /* Display content when active */
+        .active + .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body class="portal">
+    <div class="top">
+        <img src="img/logo3.png" alt="weststar logo" class="logo">
+        <h1>STUDENTS PORTAL</h1>
+    </div>
+     <div class="icon">
+            <i class="bx bx-menu"></i>
+            <div class="bell">
+                <i class="bx bx-bell"></i>  
+        </div>
+     </div>
+    
+    
+     <div class="outer">
+        <h2 style="color: rgb(0, 153, 255);">Academic Leave</h2>
+        <div class="info">
+            <div class="header">
+                <h3 style="display: inline-block; border-bottom: 1px solid #eff0f4; width:50% ;">ACADEMIC LEAVE LIST</h3>
+                <button style="background-color: rgb(0, 162, 255); float: right; height: 40px;margin-right: 310px;">Course Registration</button>
+            
+            </div>
+            
+            <div class="table" style="float: left; ">
+                <table style="border-bottom: 1px solid #eff0f4; width: 60%;">
+                    <thead>#</thead>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <thead>programme name</thead>&nbsp;&nbsp;&nbsp;&nbsp;
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <thead>application date</thead>&nbsp;&nbsp;&nbsp;&nbsp;
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <thead>From</thead>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <thead>To</thead>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <thead>Reason</thead>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <thead>Status</thead>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                
+            </table>
+            
+             </div>
+           
+           
+        </div>
+    </div>
+    <nav>
+        <div class="menu">
+            
+        
+            <ul class="main">
+                <li style="margin-bottom: 20px;"><a href="home.html"><span><i class="bx bx-home"></i> HOME</span></a></li>
+                
+                    <div class="dropdown" onclick="toggleDropdown(this)">
+                        <li  style="margin-bottom: 20px;"  ><a href="academics.html" style="font-size: larger;font-weight: bold;"><span> <i class="bx bx-book"></i> ACADEMICS</span> </li>
+                        <span class="sign" style="font-weight: bold; font-size: large;">+</span></a>
+                    </div>
+                    <div class="dropdown-content">
+                        <ul class="submenu">
+                            <li style="margin-bottom: 20px;"><a href="course-registration.html" >Course Registration</a></li>
+                            <li style="margin-bottom: 20px;"><a href="course-work.html">Course Work</a></li>
+                            <li style="margin-bottom: 20px;"><a href="exam-card.html">Exam Card</a></li>
+                            <li style="margin-bottom: 20px;"><a href="results.html">Exam Results</a></li>
+                            <li style="margin-bottom: 20px;"><a href="audit.html">Exam Audits</a></li>
+                            <li style="margin-bottom: 20px;"><a href="academic leave.html">Academic Leave</a></li>
+                            <li style="margin-bottom: 20px;"><a href="clearance.html">Clearance</a></li>
+                            <li style="margin-bottom: 20px;"><a href="survey.html">Students Survey</a></li>
+                        </li>    
+                        </ul>
+                    </div>
+                    <div class="dropdown" onclick="toggleDropdown(this)">
+                        <li  style="margin-bottom: 20px;"  ><a href="finance.html" style="font-size: large;font-weight: bold;"><span> <i class="bx bx-money"></i> FINANCE</span></li>
+                        <span class="sign">+</span></a>
+                    </div>
+                    <div class="dropdown-content">
+                        <ul class="submenu">
+                            <li style="margin-bottom: 20px;"><a href="fee balance.html" >Fee balance</a></li>
+                            <li style="margin-bottom: 20px;"><a href="receipt.html">receipt</a></li>
+                          
+                        </ul>
+                    </div>
+                    <div class="dropdown" onclick="toggleDropdown(this)">
+                        <li  style="margin-bottom: 20px;"  ><a href="self service.html"style="font-size: large;font-weight: bold;"><span> <i class="bx bx-user" ></i> SELF SERVICE</span></li>
+                        <span class="sign">+</span></a>
+                    </div>
+                    <div class="dropdown-content">
+                        <ul class="submenu">
+                            <li style="margin-bottom: 20px;"><a href="downloads.html" >Fee balance</a></li>
+                            <li style="margin-bottom: 20px;"><a href="password.html">receipt</a></li>
+                          
+                        </ul>
+                    </div>
+                
+               
+            </ul>
+        </div>
+    </nav>
+
+</body>
+</html>
